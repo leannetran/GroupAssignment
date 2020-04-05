@@ -25,7 +25,7 @@ public class backQuiz extends AppCompatActivity {
             "2. What best describes a low cable row?",
             "3. Which home exercise requires extension of the elbow with shoulders pushing body towards the wall? ",
             "4. Is a mid-row a home or gym exercise? Does this exercise require feet extension? ",
-            "5. Can the trunk be moved when doing a standing row"
+            "5. Can the trunk be moved when doing a standing row?"
     };
 
     private String answers[] = {
