@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    tools:context=".HomeScreen">
+
+    <Button
+        android:id="@+id/chestContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Chest"
+        android:textAllCaps="true"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="@+id/introductionContent"
+        app:layout_constraintTop_toBottomOf="@+id/introductionContent" />
+
+    <Button
+        android:id="@+id/armsContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Arms"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/introductionContent"
+        app:layout_constraintTop_toBottomOf="@+id/introductionContent" />
+
+    <Button
+        android:id="@+id/quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:text="Quizzes"
+        android:textStyle="italic"
+        android:typeface="normal"
+        app:layout_constraintStart_toStartOf="@+id/bodyCraft"
+        app:layout_constraintTop_toBottomOf="@+id/bodyCraft" />
+
+    <Button
+        android:id="@+id/shouldersContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Shoulder"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="@+id/chestContent"
+        app:layout_constraintTop_toBottomOf="@+id/chestContent" />
+
+    <Button
+        android:id="@+id/backContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Back"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/armsContent"
+        app:layout_constraintTop_toBottomOf="@+id/armsContent" />
+
+    <Button
+        android:id="@+id/coreContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Core"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="@+id/shouldersContent"
+        app:layout_constraintTop_toBottomOf="@+id/shouldersContent" />
+
+    <Button
+        android:id="@+id/legsContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:text="Legs"
+        android:textStyle="bold"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/backContent"
+        app:layout_constraintTop_toBottomOf="@+id/backContent" />
+
+    <Button
+        android:id="@+id/introductionContent"
+        android:layout_width="198dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginTop="80dp"
+        android:text="Introduction"
+        android:textSize="18sp"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/chestContent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="270dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="31dp"
+        android:text="Learning Content:"
+        android:textColor="@android:color/background_light"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:fontFamily="monospace"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/bodyCraft"
+        android:layout_width="109dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="18dp"
+        android:text="Bodycraft content"
+        android:typeface="monospace"
+        app:layout_constraintStart_toStartOf="@+id/coreContent"
+        app:layout_constraintTop_toBottomOf="@+id/coreContent" />
+
+    <Button
+        android:id="@+id/cancerCouncil"
+        android:layout_width="94dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="18dp"
+        android:text="Cancer Council"
+        android:typeface="monospace"
+        app:layout_constraintEnd_toEndOf="@+id/legsContent"
+        app:layout_constraintTop_toBottomOf="@+id/legsContent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
