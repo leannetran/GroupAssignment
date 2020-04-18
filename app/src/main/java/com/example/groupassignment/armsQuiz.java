@@ -66,15 +66,20 @@ public class armsQuiz extends AppCompatActivity {
         submitArmBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                //If a radio button isn't selected, application makes user select a choice
                 if (radiogArm.getCheckedRadioButtonId() == -1) {
                     Toast.makeText(getApplicationContext(), "Please select one choice", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                RadioButton uans = (RadioButton) findViewById(radiogArm.getCheckedRadioButtonId());
-                String ansText = uans.getText().toString();
-                if (ansText.equals(answers[flag])) {
+
+                //hold correct and wrong answers
+                RadioButton rdb = (RadioButton) findViewById(radiogArm.getCheckedRadioButtonId());
+                String answer = rdb.getText().toString();
+                if (answer.equals(answers[flag])) {
                     correct++;
                     Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+
                 } else {
                     wrong++;
                     Toast.makeText(getApplicationContext(), "Wrong! Answer is " + answers[flag], Toast.LENGTH_SHORT).show();
@@ -94,6 +99,8 @@ public class armsQuiz extends AppCompatActivity {
                 } else {
                     marks = correct;
                     finishQuiz();
+                    //reset the score back to 0
+                    correct = Integer.valueOf(0);
 
                 }
                 radiogArm.clearCheck();
@@ -109,6 +116,7 @@ public class armsQuiz extends AppCompatActivity {
         });
     }
 
+    //small window to set and display results and option to exit or redo quiz
     private void finishQuiz() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(armsQuiz.this);
         alertDialogBuilder
@@ -117,7 +125,9 @@ public class armsQuiz extends AppCompatActivity {
                 .setPositiveButton("REDO QUIZ", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int i) {
+                        finish();
                         startActivity(new Intent(getApplicationContext(), armsQuiz.class));
+
                     }
                 })
                 .setNegativeButton("EXIT",
@@ -127,7 +137,11 @@ public class armsQuiz extends AppCompatActivity {
                                 finish();
                             }
                         });
+
+
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
+
+
     }
 }

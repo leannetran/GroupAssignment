@@ -35,7 +35,7 @@ public class shouldersQuiz extends AppCompatActivity {
 
     private String choices[] = {
             "Shoulder Press", "Seated Shoulder Press", "Lateral Arm Raise", "Cable Shoulder Press",
-            "Seat must be aligned with shoulder, trainee grabs handles and presses away from shoulder then returns to starting position", "Seat must be adjusted to the most upright position and canble handles at shoulder level, trainee grabs handle and lift cable overhead and returning to start position", "Standing with dumbbells pointing downwards, lift dumbbells horizontally and then down again", "Trainee sits with back rested on chair, and elbows are extended with should flexion upwards",
+            "Seat is aligned with shoulder, trainee grabs handles and presses away from shoulder then returns to starting position", "Seat is adjusted to the most upright position, trainee grabs handle at shoulder level and lifts cable overhead and returning to start position", "Standing with dumbbells pointing downwards, lift dumbbells horizontally and then down again", "Trainee sits with back rested on chair, and extends elbows with shoulder flexion upwards",
             "Triceps", "Deltoids", "Triceps and deltoids", "Tricep brachii and deltoids",
             "Seated shoulder press", "Cable shoulder press", "Lateral Arm Raise", "Shoulder Press",
             "1-2 seconds", "2-3 seconds", "4-5 seconds", "10 seconds"
@@ -68,13 +68,16 @@ public class shouldersQuiz extends AppCompatActivity {
         submitBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //If a radio button isn't selected, application makes user select a choice
                 if (radiog.getCheckedRadioButtonId() == -1) {
                     Toast.makeText(getApplicationContext(), "Please select one choice", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                RadioButton uans = (RadioButton) findViewById(radiog.getCheckedRadioButtonId());
-                String ansText = uans.getText().toString();
-                if (ansText.equals(answers[flag])) {
+
+                //hold correct and wrong answers
+                RadioButton rdb = (RadioButton) findViewById(radiog.getCheckedRadioButtonId());
+                String answer = rdb.getText().toString();
+                if (answer.equals(answers[flag])) {
                     correct++;
                     Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
                 } else {
@@ -96,6 +99,8 @@ public class shouldersQuiz extends AppCompatActivity {
                 } else {
                     marks = correct;
                     finishQuiz();
+                    //reset the score back to 0;
+                    correct = Integer.valueOf(0);
                 }
                 radiog.clearCheck();
 
@@ -111,6 +116,7 @@ public class shouldersQuiz extends AppCompatActivity {
         });
     }
 
+    //small window to set and display results and option to exit or redo quiz
     private void finishQuiz() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(shouldersQuiz.this);
         alertDialogBuilder

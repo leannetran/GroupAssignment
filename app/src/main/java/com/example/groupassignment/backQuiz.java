@@ -69,13 +69,16 @@ public class backQuiz extends AppCompatActivity {
         submitBackBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //If a radio button isn't selected, application makes user select a choice
                 if (radiogBack.getCheckedRadioButtonId() == -1) {
                     Toast.makeText(getApplicationContext(), "Please select one choice", Toast.LENGTH_SHORT).show();
                     return;
                 }
-                RadioButton uans = (RadioButton) findViewById(radiogBack.getCheckedRadioButtonId());
-                String ansText = uans.getText().toString();
-                if (ansText.equals(answers[flag])) {
+
+                //hold correct and wrong answers
+                RadioButton rdb = (RadioButton) findViewById(radiogBack.getCheckedRadioButtonId());
+                String answer = rdb.getText().toString();
+                if (answer.equals(answers[flag])) {
                     correct++;
                     Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
                 } else {
@@ -97,6 +100,8 @@ public class backQuiz extends AppCompatActivity {
                 } else {
                     marks = correct;
                     finishQuiz();
+                    //reset the score back to 0;
+                    correct = Integer.valueOf(0);
                 }
                 radiogBack.clearCheck();
 
@@ -112,6 +117,7 @@ public class backQuiz extends AppCompatActivity {
         });
     }
 
+    //small window to set and display results and option to exit or redo quiz
     private void finishQuiz() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(backQuiz.this);
         alertDialogBuilder
