@@ -19,6 +19,8 @@ public class HomeScreen extends AppCompatActivity {
     private Button legsContent;
     private Button shouldersContent;
     private Button bodyCraft;
+    private Button progress;
+
 
 
     @Override
@@ -139,6 +141,17 @@ public class HomeScreen extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),quizHomePage.class);
+                startActivity(intent);
+            }
+        });
+
+        //Access Progress
+        Button progressBtn = (Button) findViewById(R.id.progress);
+
+        progressBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),progressHomePage.class);
                 startActivity(intent);
             }
         });

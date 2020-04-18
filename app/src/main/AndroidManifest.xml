@@ -16,6 +16,7 @@
         <activity android:name=".backQuiz" />
         <activity android:name=".armsQuiz" />
         <activity android:name=".quizHomePage" />
+        <activity android:name=".progressHomePage" />
         <activity android:name=".shouldersExerciseLearning" />
         <activity android:name=".legsExerciseLearning" />
         <activity android:name=".introduction" />
@@ -31,6 +32,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>

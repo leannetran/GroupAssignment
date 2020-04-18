@@ -14,6 +14,7 @@ public class quizHomePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_home_page);
 
+
         Button armButton = (Button) findViewById(R.id.btnArms);
         Button backButton = (Button) findViewById(R.id.btnBack);
         Button chestButton = (Button) findViewById(R.id.btnChest);
