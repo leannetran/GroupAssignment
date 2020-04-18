@@ -35,7 +35,7 @@ public class shouldersQuiz extends AppCompatActivity {
 
     private String choices[] = {
             "Shoulder Press", "Seated Shoulder Press", "Lateral Arm Raise", "Cable Shoulder Press",
-            "Seat must be aligned with shoulder, trainee grabs handles and presses away from shoulder then returns to starting position", "Seat must be adjusted to the most upright position and canble handles at shoulder level, trainee grabs handle and lift cable overhead and returning to start position", "Standing with dumbbells pointing downwards, lift dumbbells horizontally and then down again", "Trainee sits with back rested on chair, and elbows are extended with should flexion upwards",
+            "Seat is aligned with shoulder, trainee grabs handles and presses away from shoulder then returns to starting position", "Seat is adjusted to the most upright position, trainee grabs handle at shoulder level and lifts cable overhead and returning to start position", "Standing with dumbbells pointing downwards, lift dumbbells horizontally and then down again", "Trainee sits with back rested on chair, and extends elbows with shoulder flexion upwards",
             "Triceps", "Deltoids", "Triceps and deltoids", "Tricep brachii and deltoids",
             "Seated shoulder press", "Cable shoulder press", "Lateral Arm Raise", "Shoulder Press",
             "1-2 seconds", "2-3 seconds", "4-5 seconds", "10 seconds"
