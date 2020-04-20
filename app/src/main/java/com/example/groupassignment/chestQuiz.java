@@ -118,7 +118,7 @@ public class chestQuiz extends AppCompatActivity {
 
     //small window to set and display results and option to exit or redo quiz
     private void finishQuiz() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(chestQuiz.this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(chestQuiz.this, R.style.AlertDialogTheme);
         alertDialogBuilder
                 .setMessage("You've finished the quiz! Your scored " + marks + "/5.")
                 .setCancelable(false)

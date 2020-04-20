@@ -115,7 +115,7 @@ public class legsQuiz extends AppCompatActivity {
 
     //small window to set and display results and option to exit or redo quiz
     private void finishQuiz() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(legsQuiz.this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(legsQuiz.this, R.style.AlertDialogTheme);
         alertDialogBuilder
                 .setMessage("You've finished the quiz! You scored " + marks + "/5.")
                 .setCancelable(false)

@@ -119,7 +119,7 @@ public class backQuiz extends AppCompatActivity {
 
     //small window to set and display results and option to exit or redo quiz
     private void finishQuiz() {
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(backQuiz.this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(backQuiz.this, R.style.AlertDialogTheme);
         alertDialogBuilder
                 .setMessage("You've finished the quiz! You scored " + marks + "/5.")
                 .setCancelable(false)

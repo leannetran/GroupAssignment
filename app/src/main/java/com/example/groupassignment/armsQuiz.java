@@ -120,34 +120,36 @@ public class armsQuiz extends AppCompatActivity {
     private void finishQuiz() {
         AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(armsQuiz.this, R.style.AlertDialogTheme);
         alertDialogBuilder
-                .setMessage("You've finished the quiz! You scored  " + marks + "/5.")
+                .setMessage("You've finished the quiz! You scored " + marks + "/5.")
                 .setCancelable(false)
-                .setPositiveButton("REDO", new DialogInterface.OnClickListener() {
+                .setPositiveButton("REDO QUIZ", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int i) {
-                        //finish();
                         startActivity(new Intent(getApplicationContext(), armsQuiz.class));
-
                     }
                 })
-                .setNeutralButton("CHECK PROGRESS",
+                .setNeutralButton("CHECK PROGRESS", new DialogInterface.OnClickListener() {
+                    // int count = 0;
+                    @Override
+                    public void onClick(DialogInterface dialog, int i) {
+
+                        finish();
+                        //count++;
+                        Intent intent = new Intent(armsQuiz.this, backProgress.class);
+                        intent.putExtra("marks", marks);
+                        //intent.putExtra("count", count);
+                        startActivity(intent);
+                    }
+                })
+                .setNegativeButton("EXIT",
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int i) {
-                                startActivity(new Intent(getApplicationContext(), armsQuiz.class));
+                                finish();
                             }
-                        })
-                .setNegativeButton("EXIT",
-                new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int i) {
-                        //finish();
-                    }
-                });
-
+                        });
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
-
 
     }
 }
