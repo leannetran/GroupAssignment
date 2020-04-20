@@ -87,8 +87,6 @@ public class armsQuiz extends AppCompatActivity {
 
                 flag++;
 
-
-
                 if (score != null)
                     score.setText("" + correct);
 
@@ -103,13 +101,6 @@ public class armsQuiz extends AppCompatActivity {
                     finishQuiz();
                     //reset the score back to 0
                     correct = Integer.valueOf(0);
-
-                    //bonita added
-                   /* Intent intent = new Intent(armsQuiz.this, progressHomePage.class);
-                    intent.putExtra("mark", marks);
-                    startActivity(intent);*/
-
-
 
                 }
                 radiogArm.clearCheck();
@@ -127,45 +118,32 @@ public class armsQuiz extends AppCompatActivity {
 
     //small window to set and display results and option to exit or redo quiz
     private void finishQuiz() {
-
-
-        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(armsQuiz.this);
+        AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(armsQuiz.this, R.style.AlertDialogTheme);
         alertDialogBuilder
                 .setMessage("You've finished the quiz! You scored  " + marks + "/5.")
                 .setCancelable(false)
-                .setPositiveButton("REDO QUIZ", new DialogInterface.OnClickListener() {
+                .setPositiveButton("REDO", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int i) {
-                        int count = 0;
-                        finish();
-                        count++;
+                        //finish();
                         startActivity(new Intent(getApplicationContext(), armsQuiz.class));
 
-
                     }
                 })
-                .setNeutralButton("CHECK PROGRESS", new DialogInterface.OnClickListener() {
-                   // int count = 0;
-                    @Override
-                    public void onClick(DialogInterface dialog, int i) {
-                        //int count = 0;
-                        finish();
-                       // count++;
-                        Intent intent = new Intent(armsQuiz.this, armsProgress.class);
-                        intent.putExtra("marks", marks);
-                        //intent.putExtra("count", count);
-                        startActivity(intent);
-                    }
-                })
-                .setNegativeButton("EXIT",
+                .setNeutralButton("CHECK PROGRESS",
                         new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int i) {
-                                int count = 0;
-                                finish();
-                                count++;
+                                startActivity(new Intent(getApplicationContext(), armsQuiz.class));
                             }
-                        });
+                        })
+                .setNegativeButton("EXIT",
+                new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int i) {
+                        //finish();
+                    }
+                });
 
         AlertDialog alertDialog = alertDialogBuilder.create();
         alertDialog.show();
