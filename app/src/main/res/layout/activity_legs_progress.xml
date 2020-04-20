@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/yellowbg"
+    tools:context=".legsProgress">
+
+    <TextView
+        android:id="@+id/attemptLegs"
+        android:layout_width="169dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/highestMarkLegs"
+        app:layout_constraintTop_toBottomOf="@+id/highestMarkLegs" />
+
+    <TextView
+        android:id="@+id/highestMarkLegs"
+        android:layout_width="235dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/yourMarkLegs"
+        app:layout_constraintTop_toBottomOf="@+id/yourMarkLegs" />
+
+    <TextView
+        android:id="@+id/yourMarkLegs"
+        android:layout_width="142dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="15dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/topicLegs"
+        app:layout_constraintTop_toBottomOf="@+id/topicLegs" />
+
+    <TextView
+        android:id="@+id/topicLegs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="164dp"
+        android:text="Topic: Legs"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/learningTvLegs"
+        app:layout_constraintTop_toBottomOf="@+id/learningTvLegs" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="256dp"
+        android:layout_height="125dp"
+        android:layout_marginStart="58dp"
+        android:layout_marginLeft="58dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.32"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/learningTvLegs"
+        app:srcCompat="@drawable/checklist" />
+
+    <TextView
+        android:id="@+id/learningTvLegs"
+        android:layout_width="167dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="69dp"
+        android:layout_marginLeft="69dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:text="Learning Progress"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

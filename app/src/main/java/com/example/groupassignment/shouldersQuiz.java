@@ -128,6 +128,19 @@ public class shouldersQuiz extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), shouldersQuiz.class));
                     }
                 })
+                .setNeutralButton("CHECK PROGRESS", new DialogInterface.OnClickListener() {
+                    // int count = 0;
+                    @Override
+                    public void onClick(DialogInterface dialog, int i) {
+
+                        finish();
+                        //count++;
+                        Intent intent = new Intent(shouldersQuiz.this, shouldersProgress.class);
+                        intent.putExtra("marks", marks);
+                        //intent.putExtra("count", count);
+                        startActivity(intent);
+                    }
+                })
                 .setNegativeButton("EXIT",
                         new DialogInterface.OnClickListener() {
                             @Override

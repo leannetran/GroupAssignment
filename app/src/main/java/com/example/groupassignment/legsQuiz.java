@@ -125,6 +125,19 @@ public class legsQuiz extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), legsQuiz.class));
                     }
                 })
+                .setNeutralButton("CHECK PROGRESS", new DialogInterface.OnClickListener() {
+                    // int count = 0;
+                    @Override
+                    public void onClick(DialogInterface dialog, int i) {
+
+                        finish();
+                        //count++;
+                        Intent intent = new Intent(legsQuiz.this, legsProgress.class);
+                        intent.putExtra("marks", marks);
+                        //intent.putExtra("count", count);
+                        startActivity(intent);
+                    }
+                })
                 .setNegativeButton("EXIT",
                         new DialogInterface.OnClickListener() {
                             @Override

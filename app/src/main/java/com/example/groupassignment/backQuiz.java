@@ -129,6 +129,19 @@ public class backQuiz extends AppCompatActivity {
                         startActivity(new Intent(getApplicationContext(), backQuiz.class));
                     }
                 })
+                .setNeutralButton("CHECK PROGRESS", new DialogInterface.OnClickListener() {
+                    // int count = 0;
+                    @Override
+                    public void onClick(DialogInterface dialog, int i) {
+
+                        finish();
+                        //count++;
+                        Intent intent = new Intent(backQuiz.this, backProgress.class);
+                        intent.putExtra("marks", marks);
+                        //intent.putExtra("count", count);
+                        startActivity(intent);
+                    }
+                })
                 .setNegativeButton("EXIT",
                         new DialogInterface.OnClickListener() {
                             @Override
