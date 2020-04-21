@@ -20,7 +20,7 @@ public class Muscle implements Serializable
     private Object previous;
     @SerializedName("results")
     @Expose
-    private List<Result> results = null;
+    private List<Result> results = new ArrayList<Result>();
     private final static long serialVersionUID = -1745620041856427879L;
 
     /**
@@ -46,10 +46,12 @@ public class Muscle implements Serializable
     }
 
     public int getCount() {
+
         return count;
     }
 
     public void setCount(int count) {
+
         this.count = count;
     }
 
@@ -59,10 +61,12 @@ public class Muscle implements Serializable
     }
 
     public Object getNext() {
+
         return next;
     }
 
     public void setNext(Object next) {
+
         this.next = next;
     }
 
@@ -72,10 +76,12 @@ public class Muscle implements Serializable
     }
 
     public Object getPrevious() {
+
         return previous;
     }
 
     public void setPrevious(Object previous) {
+
         this.previous = previous;
     }
 
@@ -85,10 +91,12 @@ public class Muscle implements Serializable
     }
 
     public List<Result> getResults() {
+
         return results;
     }
 
     public void setResults(List<Result> results) {
+
         this.results = results;
     }
 

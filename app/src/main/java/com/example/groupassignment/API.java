@@ -26,7 +26,7 @@ public class API extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_a_p_i);
 
-        muscleButton = findViewById(R.id.button);
+        muscleButton = findViewById(R.id.buttonMuscle);
         muscleTv = findViewById(R.id.textViewMuscle);
 
         //create Retrofit instance & parse the retrieved JSON using GSON deserializer
@@ -36,18 +36,18 @@ public class API extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 //get a service and call object for the request
-                ResultService service = retrofit.create(ResultService.class);
-                Call<Result> resultsCall = service.getData();
-                resultsCall.enqueue(new Callback<Result>() {
+                MuscleService service = retrofit.create(MuscleService.class);
+                Call<Muscle> muscleCall = service.getData();
+                muscleCall.enqueue(new Callback<Muscle>() {
                     @Override
-                    public void onResponse(Call<Result> call, Response<Result> response) {
-                        Result r = response.body();
-                        muscleTv.setText(r.getName());
+                    public void onResponse(Call<Muscle> call, Response<Muscle> response) {
+                        Muscle m  = response.body();
+                        muscleTv.setText(m.getResults().get(0).getName());
 
                     }
 
                     @Override
-                    public void onFailure(Call<Result> call, Throwable t) {
+                    public void onFailure(Call<Muscle> call, Throwable t) {
                         System.out.println("failed");
 
                     }

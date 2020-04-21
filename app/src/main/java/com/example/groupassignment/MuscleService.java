@@ -6,9 +6,9 @@ import com.example.groupassignment.Entities.Result;
 import retrofit2.Call;
 import retrofit2.http.GET;
 
-public interface ResultService {
+public interface MuscleService {
     @GET("/api/v2/muscle/?format=json")
-    Call<Result> getData();
+    Call<Muscle> getData();
 
 
 }
