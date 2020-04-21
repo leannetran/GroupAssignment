@@ -20,7 +20,7 @@ public class Muscle implements Serializable
     private Object previous;
     @SerializedName("results")
     @Expose
-    private List<Result> results = new ArrayList<Result>();
+    private List<Result> results = null;
     private final static long serialVersionUID = -1745620041856427879L;
 
     /**
