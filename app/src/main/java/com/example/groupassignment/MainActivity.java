@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
+import retrofit2.Retrofit;
+import retrofit2.converter.gson.GsonConverterFactory;
+
 public class MainActivity extends AppCompatActivity {
 
     private static int splashTime = 3000;
@@ -26,6 +29,13 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         }, splashTime);
+
+
+
+
+
+
+
 
     }
 }

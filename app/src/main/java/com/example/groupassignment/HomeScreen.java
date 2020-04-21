@@ -145,16 +145,16 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
-        //Access Arms Progress
-        /*Button progressBtn = (Button) findViewById(R.id.progress);
+        //Access API
+        Button apiButton = (Button) findViewById(R.id.apiButton);
 
-        progressBtn.setOnClickListener(new View.OnClickListener() {
+        apiButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),armsProgress.class);
+                Intent intent = new Intent(getApplicationContext(),API.class);
                 startActivity(intent);
             }
-        });*/
+        });
 
     }
 }
