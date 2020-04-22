@@ -135,7 +135,7 @@ public class armsQuiz extends AppCompatActivity {
 
                         finish();
                         //count++;
-                        Intent intent = new Intent(armsQuiz.this, backProgress.class);
+                        Intent intent = new Intent(armsQuiz.this, armsProgress.class);
                         intent.putExtra("marks", marks);
                         //intent.putExtra("count", count);
                         startActivity(intent);

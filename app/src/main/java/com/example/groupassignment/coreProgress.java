@@ -17,7 +17,7 @@ public class coreProgress extends AppCompatActivity {
         TextView yourMark = findViewById(R.id.yourMarkCore);
         TextView highestMark = findViewById(R.id.highestMarkCore);
 
-        TextView attempt = findViewById(R.id.attemptCore);
+
         //TextView attemptValue = findViewById(R.id.attemptValue);
 
         //get the score from the quiz by Intent

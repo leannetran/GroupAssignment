@@ -17,7 +17,7 @@ public class chestProgress extends AppCompatActivity {
         TextView yourMark = findViewById(R.id.yourMarkChest);
         TextView highestMark = findViewById(R.id.highestMarkChest);
 
-        TextView attempt = findViewById(R.id.attemptChest);
+
         //TextView attemptValue = findViewById(R.id.attemptValue);
 
         //get the score from the quiz by Intent

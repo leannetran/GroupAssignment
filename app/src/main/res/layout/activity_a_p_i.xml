@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/fitnessbg"
     tools:context=".API">
 
     <Button
@@ -12,24 +13,60 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="95dp"
         android:layout_marginLeft="95dp"
-        android:layout_marginTop="73dp"
+        android:layout_marginTop="164dp"
         android:layout_marginEnd="137dp"
         android:layout_marginRight="137dp"
-        android:text="Button"
+        android:text="GET EXERCISE CATEGORY"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.295"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewMuscle" />
+        app:layout_constraintTop_toBottomOf="@+id/exerciseTv" />
 
     <TextView
-        android:id="@+id/textViewMuscle"
-        android:layout_width="213dp"
-        android:layout_height="177dp"
+        android:id="@+id/exerciseTv"
+        android:layout_width="175dp"
+        android:layout_height="51dp"
         android:layout_marginStart="41dp"
         android:layout_marginLeft="41dp"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="112dp"
         android:layout_marginEnd="65dp"
         android:layout_marginRight="65dp"
+        android:textSize="35sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.671"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="250dp"
+        android:layout_height="82dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginRight="22dp"
+        android:text="WORKOUT OF THE DAY!"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="256dp"
+        android:layout_height="149dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="76dp"
+        android:layout_marginRight="76dp"
+        android:text="Choose 3 exercises from this category, based on your knowledge from our app and quizzes now! Perform 3 sets of 10 reps for a quick workout!"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.325"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseTv" />
 </androidx.constraintlayout.widget.ConstraintLayout>

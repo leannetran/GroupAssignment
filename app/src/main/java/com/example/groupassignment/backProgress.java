@@ -14,12 +14,8 @@ public class backProgress extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_back_progress);
 
-
         TextView yourMark = findViewById(R.id.yourMarkBack);
         TextView highestMark = findViewById(R.id.highestMarkBack);
-
-        TextView attempt = findViewById(R.id.attemptBack);
-        //TextView attemptValue = findViewById(R.id.attemptValue);
 
         //get the score from the quiz by Intent
         Intent intent = getIntent();

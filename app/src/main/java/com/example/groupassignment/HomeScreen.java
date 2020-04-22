@@ -146,9 +146,9 @@ public class HomeScreen extends AppCompatActivity {
         });
 
         //Access API
-        Button apiButton = (Button) findViewById(R.id.apiButton);
+        Button exerciseButton = (Button) findViewById(R.id.exerciseButton);
 
-        apiButton.setOnClickListener(new View.OnClickListener() {
+        exerciseButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(),API.class);

@@ -6,7 +6,13 @@ import java.util.List;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Muscle implements Serializable
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
+
+public class Exercise implements Serializable
 {
 
     @SerializedName("count")
@@ -21,13 +27,13 @@ public class Muscle implements Serializable
     @SerializedName("results")
     @Expose
     private List<Result> results = null;
-    private final static long serialVersionUID = -1745620041856427879L;
+    private final static long serialVersionUID = 4627459112500958928L;
 
     /**
      * No args constructor for use in serialization
      *
      */
-    public Muscle() {
+    public Exercise() {
     }
 
     /**
@@ -37,7 +43,7 @@ public class Muscle implements Serializable
      * @param count
      * @param results
      */
-    public Muscle(int count, Object next, Object previous, List<Result> results) {
+    public Exercise(int count, Object next, Object previous, List<Result> results) {
         super();
         this.count = count;
         this.next = next;
@@ -46,61 +52,53 @@ public class Muscle implements Serializable
     }
 
     public int getCount() {
-
         return count;
     }
 
     public void setCount(int count) {
-
         this.count = count;
     }
 
-    public Muscle withCount(int count) {
+    public Exercise withCount(int count) {
         this.count = count;
         return this;
     }
 
     public Object getNext() {
-
         return next;
     }
 
     public void setNext(Object next) {
-
         this.next = next;
     }
 
-    public Muscle withNext(Object next) {
+    public Exercise withNext(Object next) {
         this.next = next;
         return this;
     }
 
     public Object getPrevious() {
-
         return previous;
     }
 
     public void setPrevious(Object previous) {
-
         this.previous = previous;
     }
 
-    public Muscle withPrevious(Object previous) {
+    public Exercise withPrevious(Object previous) {
         this.previous = previous;
         return this;
     }
 
     public List<Result> getResults() {
-
         return results;
     }
 
     public void setResults(List<Result> results) {
-
         this.results = results;
     }
 
-    public Muscle withResults(List<Result> results) {
+    public Exercise withResults(List<Result> results) {
         this.results = results;
         return this;
     }

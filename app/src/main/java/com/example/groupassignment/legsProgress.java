@@ -18,7 +18,7 @@ public class legsProgress extends AppCompatActivity {
         TextView yourMark = findViewById(R.id.yourMarkLegs);
         TextView highestMark = findViewById(R.id.highestMarkLegs);
 
-        TextView attempt = findViewById(R.id.attemptLegs);
+
         //TextView attemptValue = findViewById(R.id.attemptValue);
 
         //get the score from the quiz by Intent

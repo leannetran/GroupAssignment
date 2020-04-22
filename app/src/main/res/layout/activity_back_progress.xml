@@ -8,19 +8,10 @@
     tools:context=".backProgress">
 
     <TextView
-        android:id="@+id/attemptBack"
-        android:layout_width="169dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="15dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/highestMarkBack"
-        app:layout_constraintTop_toBottomOf="@+id/highestMarkBack" />
-
-    <TextView
         android:id="@+id/highestMarkBack"
         android:layout_width="235dp"
         android:layout_height="41dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/yourMarkBack"
         app:layout_constraintTop_toBottomOf="@+id/yourMarkBack" />
@@ -29,7 +20,7 @@
         android:id="@+id/yourMarkBack"
         android:layout_width="142dp"
         android:layout_height="37dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/topicBack"
         app:layout_constraintTop_toBottomOf="@+id/topicBack" />
@@ -63,15 +54,15 @@
 
     <TextView
         android:id="@+id/learningTvBack"
-        android:layout_width="167dp"
-        android:layout_height="50dp"
+        android:layout_width="219dp"
+        android:layout_height="56dp"
         android:layout_marginStart="69dp"
         android:layout_marginLeft="69dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="69dp"
         android:layout_marginRight="69dp"
         android:text="Learning Progress"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

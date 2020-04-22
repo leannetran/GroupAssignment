@@ -4,7 +4,8 @@ import java.io.Serializable;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
-public class Result implements Serializable {
+public class Result implements Serializable
+{
 
     @SerializedName("id")
     @Expose
@@ -12,27 +13,24 @@ public class Result implements Serializable {
     @SerializedName("name")
     @Expose
     private String name;
-    @SerializedName("is_front")
-    @Expose
-    private boolean isFront;
-    private final static long serialVersionUID = 6527828862509597338L;
+    private final static long serialVersionUID = 3684351667418789628L;
 
     /**
      * No args constructor for use in serialization
+     *
      */
     public Result() {
     }
 
     /**
-     * @param isFront
+     *
      * @param name
      * @param id
      */
-    public Result(int id, String name, boolean isFront) {
+    public Result(int id, String name) {
         super();
         this.id = id;
         this.name = name;
-        this.isFront = isFront;
     }
 
     public int getId() {
@@ -61,16 +59,4 @@ public class Result implements Serializable {
         return this;
     }
 
-    public Boolean getIsFront() {
-        return isFront;
-    }
-
-    public void setIsFront(Boolean isFront) {
-        this.isFront = isFront;
-    }
-
-    public Result withIsFront(Boolean isFront) {
-        this.isFront = isFront;
-        return this;
-    }
 }

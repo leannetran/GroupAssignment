@@ -18,8 +18,7 @@ public class shouldersProgress extends AppCompatActivity {
         TextView yourMark = findViewById(R.id.yourMarkShoulders);
         TextView highestMark = findViewById(R.id.highestMarkShoulders);
 
-        TextView attempt = findViewById(R.id.attemptShoulders);
-        //TextView attemptValue = findViewById(R.id.attemptValue);
+
 
         //get the score from the quiz by Intent
         Intent intent = getIntent();

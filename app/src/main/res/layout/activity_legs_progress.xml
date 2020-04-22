@@ -8,19 +8,10 @@
     tools:context=".legsProgress">
 
     <TextView
-        android:id="@+id/attemptLegs"
-        android:layout_width="169dp"
-        android:layout_height="46dp"
-        android:layout_marginTop="15dp"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="@+id/highestMarkLegs"
-        app:layout_constraintTop_toBottomOf="@+id/highestMarkLegs" />
-
-    <TextView
         android:id="@+id/highestMarkLegs"
         android:layout_width="235dp"
         android:layout_height="41dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/yourMarkLegs"
         app:layout_constraintTop_toBottomOf="@+id/yourMarkLegs" />
@@ -29,7 +20,7 @@
         android:id="@+id/yourMarkLegs"
         android:layout_width="142dp"
         android:layout_height="37dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="40dp"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="@+id/topicLegs"
         app:layout_constraintTop_toBottomOf="@+id/topicLegs" />
@@ -61,15 +52,15 @@
 
     <TextView
         android:id="@+id/learningTvLegs"
-        android:layout_width="167dp"
-        android:layout_height="50dp"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
         android:layout_marginStart="69dp"
         android:layout_marginLeft="69dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="69dp"
         android:layout_marginRight="69dp"
         android:text="Learning Progress"
-        android:textSize="20sp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
