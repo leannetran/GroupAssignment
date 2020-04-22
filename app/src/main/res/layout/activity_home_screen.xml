@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/background_dark"
+    android:background="@drawable/runningbg"
     tools:context=".HomeScreen">
 
     <Button
@@ -44,23 +44,23 @@
 
     <Button
         android:id="@+id/exerciseButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="91dp"
+        android:layout_height="50dp"
         android:layout_marginStart="14dp"
         android:layout_marginLeft="14dp"
-        android:layout_marginTop="13dp"
         android:text="EXERCISE"
-        android:textSize="15dp"
+        android:textSize="14dp"
         android:textStyle="italic"
         android:typeface="normal"
         app:layout_constraintEnd_toEndOf="@+id/cancerCouncil"
-        app:layout_constraintStart_toEndOf="@+id/quiz"
-        app:layout_constraintTop_toBottomOf="@+id/cancerCouncil" />
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/cancerCouncil"
+        app:layout_constraintTop_toTopOf="@+id/quiz" />
 
     <Button
         android:id="@+id/shouldersContent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="93dp"
+        android:layout_height="51dp"
         android:layout_marginTop="14dp"
         android:text="Shoulder"
         android:textStyle="bold"
@@ -133,20 +133,24 @@
 
     <Button
         android:id="@+id/bodyCraft"
-        android:layout_width="109dp"
-        android:layout_height="51dp"
+        android:layout_width="90dp"
+        android:layout_height="54dp"
         android:layout_marginTop="18dp"
         android:text="Bodycraft content"
+        android:textSize="12dp"
+        android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintStart_toStartOf="@+id/coreContent"
         app:layout_constraintTop_toBottomOf="@+id/coreContent" />
 
     <Button
         android:id="@+id/cancerCouncil"
-        android:layout_width="94dp"
-        android:layout_height="51dp"
+        android:layout_width="93dp"
+        android:layout_height="57dp"
         android:layout_marginTop="18dp"
         android:text="Cancer Council"
+        android:textSize="12dp"
+        android:textStyle="bold"
         android:typeface="monospace"
         app:layout_constraintEnd_toEndOf="@+id/legsContent"
         app:layout_constraintTop_toBottomOf="@+id/legsContent" />
