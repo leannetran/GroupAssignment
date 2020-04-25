@@ -62,7 +62,7 @@
         android:layout_marginTop="15dp"
         android:layout_marginEnd="76dp"
         android:layout_marginRight="76dp"
-        android:text="Choose 3 exercises from this category, based on your knowledge from our app and quizzes now! Perform 3 sets of 10 reps for a quick workout!"
+        android:text="Go to the WORKOUT section and choose the category shown above to get your workout for the day!"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

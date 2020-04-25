@@ -11,7 +11,7 @@
         android:id="@+id/chestContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="6dp"
         android:text="Chest"
         android:textAllCaps="true"
         android:textSize="14sp"
@@ -24,12 +24,16 @@
         android:id="@+id/armsContent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="14dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginLeft="80dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginRight="142dp"
         android:text="Arms"
         android:textStyle="bold"
         android:typeface="monospace"
-        app:layout_constraintEnd_toEndOf="@+id/introductionContent"
-        app:layout_constraintTop_toBottomOf="@+id/introductionContent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/introductionContent"
+        app:layout_constraintTop_toTopOf="@+id/introductionContent" />
 
     <Button
         android:id="@+id/quiz"
@@ -44,18 +48,15 @@
 
     <Button
         android:id="@+id/exerciseButton"
-        android:layout_width="91dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="14dp"
-        android:layout_marginLeft="14dp"
+        android:layout_width="88dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="12dp"
         android:text="EXERCISE"
         android:textSize="14dp"
         android:textStyle="italic"
         android:typeface="normal"
-        app:layout_constraintEnd_toEndOf="@+id/cancerCouncil"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="@+id/cancerCouncil"
-        app:layout_constraintTop_toTopOf="@+id/quiz" />
+        app:layout_constraintStart_toStartOf="@+id/legsContent"
+        app:layout_constraintTop_toBottomOf="@+id/legsContent" />
 
     <Button
         android:id="@+id/shouldersContent"
@@ -103,13 +104,13 @@
 
     <Button
         android:id="@+id/introductionContent"
-        android:layout_width="198dp"
-        android:layout_height="48dp"
+        android:layout_width="90dp"
+        android:layout_height="53dp"
         android:layout_marginStart="64dp"
         android:layout_marginLeft="64dp"
         android:layout_marginTop="80dp"
         android:text="Introduction"
-        android:textSize="18sp"
+        android:textSize="9sp"
         android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/chestContent"
         app:layout_constraintStart_toStartOf="parent"
@@ -147,12 +148,20 @@
         android:id="@+id/cancerCouncil"
         android:layout_width="93dp"
         android:layout_height="57dp"
-        android:layout_marginTop="18dp"
+        android:layout_marginTop="15dp"
         android:text="Cancer Council"
         android:textSize="12dp"
         android:textStyle="bold"
         android:typeface="monospace"
-        app:layout_constraintEnd_toEndOf="@+id/legsContent"
-        app:layout_constraintTop_toBottomOf="@+id/legsContent" />
+        app:layout_constraintStart_toStartOf="@+id/exerciseButton"
+        app:layout_constraintTop_toBottomOf="@+id/exerciseButton" />
+
+    <Button
+        android:id="@+id/workoutButton"
+        android:layout_width="94dp"
+        android:layout_height="44dp"
+        android:text="WORKOUT"
+        app:layout_constraintStart_toStartOf="@+id/cancerCouncil"
+        app:layout_constraintTop_toTopOf="@+id/quiz" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
