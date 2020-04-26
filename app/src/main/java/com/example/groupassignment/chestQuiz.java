@@ -129,15 +129,12 @@ public class chestQuiz extends AppCompatActivity {
                     }
                 })
                 .setNeutralButton("CHECK PROGRESS", new DialogInterface.OnClickListener() {
-                    // int count = 0;
                     @Override
                     public void onClick(DialogInterface dialog, int i) {
 
                         finish();
-                        //count++;
                         Intent intent = new Intent(chestQuiz.this, chestProgress.class);
                         intent.putExtra("marks", marks);
-                        //intent.putExtra("count", count);
                         startActivity(intent);
                     }
                 })

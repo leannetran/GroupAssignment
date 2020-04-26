@@ -63,7 +63,6 @@ public class TrainingAdapter extends RecyclerView.Adapter<TrainingAdapter.Traini
     public void onBindViewHolder(TrainingViewHolder holder, int position) {
         Training training = mTrainings.get(position);
         holder.name.setText(training.getName());
-
         holder.itemView.setTag(training);
         holder.itemView.setOnClickListener(mOnClickListener);
     }

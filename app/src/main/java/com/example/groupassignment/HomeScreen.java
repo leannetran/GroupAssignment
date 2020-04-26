@@ -158,7 +158,7 @@ public class HomeScreen extends AppCompatActivity {
 
 
 
-        //Access API
+        //Access workouts
         Button workoutButton = (Button) findViewById(R.id.workoutButton);
 
         workoutButton.setOnClickListener(new View.OnClickListener() {
