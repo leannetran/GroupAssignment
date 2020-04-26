@@ -40,7 +40,7 @@ public class DetailFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.fragment_detail, container, false);
 
 
-        //Initialised fragment UI elements by finding them in fragment layout, and then displayed details of the selected restaurant (for Comment (optional) I wanted it only in the detail fragment, so I added it here)
+        //Initialised fragment UI elements by finding them in fragment layout, and then displayed details of the selected workout category
         if(mTraining != null) {
             NumberFormat formatter = NumberFormat.getInstance();
             ((TextView) rootView.findViewById(R.id.tvCommentName)).setText('"' + mTraining.getComment() + '"');

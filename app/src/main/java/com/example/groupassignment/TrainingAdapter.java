@@ -41,7 +41,7 @@ public class TrainingAdapter extends RecyclerView.Adapter<TrainingAdapter.Traini
         mTwoPane = twoPane;
     }
 
-    //Providing a reference to the views for each data item, here I provide access to the main elements: name, cuisine, location and rating in a view holder
+    //Providing a reference to the views for each data item, providing access to the main element (category name) in a view holder
     public static class TrainingViewHolder extends RecyclerView.ViewHolder  {
         public TextView name;
 

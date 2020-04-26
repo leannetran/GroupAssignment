@@ -73,7 +73,7 @@ public class armsQuiz extends AppCompatActivity {
                     return;
                 }
 
-                //hold correct and wrong answers
+                //hold correct and wrong answers using flag, and displaying these correct/wrong answers with Toast
                 RadioButton rdb = (RadioButton) findViewById(radiogArm.getCheckedRadioButtonId());
                 String answer = rdb.getText().toString();
                 if (answer.equals(answers[flag])) {

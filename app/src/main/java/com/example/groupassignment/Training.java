@@ -53,6 +53,7 @@ public class Training {
     }
 
 
+    //Create arraylist of the workouts for each category to be displayed
     public static ArrayList<Training> getTrainings() {
         ArrayList<Training> trainings = new ArrayList<>();
         trainings.add(new Training("Legs", "15 reps squats, 15 reps lunges (each side), 12 reps leg presses, 12 reps hamstring curls, REPEAT 4 TIMES!"));
